@@ -1,0 +1,11 @@
+services:
+  vite-dev:
+    build:
+      context: frontend
+      dockerfile: dockerfile
+      target: dev 
+    container_name: vite-dev
+    volumes:
+      - ./frontend/src:/app/src
+    ports:
+      - "5173:5173" #Default port for vite and target
