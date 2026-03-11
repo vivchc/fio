@@ -1,0 +1,18 @@
+# -----
+# Installs the app folder as a package so alembic/env.py can import from it.
+# Tells how to build the project, and where to find the packages. 
+# -----
+
+# How to package project
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fio-api"
+version = "0.1.0"
+
+# Find pkgs in current directory that start with "app"
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]
