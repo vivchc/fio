@@ -120,3 +120,6 @@ celerybeat.pid
 
 # macOS
 .DS_Store
+
+# Formatters
+.prettierignore
